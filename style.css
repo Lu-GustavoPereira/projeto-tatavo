@@ -1,27 +1,27 @@
-
 /* Estilo geral */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #1FB6BB, #00E0E6);
+    background: linear-gradient(to right, #A7C7E7, #8FBF9F);
     color: #333;
     text-align: center;
 }
 
-/* Cabeçalho mais moderno */
+/* Cabeçalho inspirado em Ghibli (tons de azul céu) */
 header {
-    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    background: linear-gradient(135deg, #6CA885, #87B9E0);
     color: white;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
 header h2 {
     margin: 0;
     font-size: 2em;
     letter-spacing: 2px;
+    font-weight: 600;
 }
 
 header nav {
@@ -30,7 +30,7 @@ header nav {
 
 header nav a {
     display: inline-block;
-    color: #ffeb3b;
+    color: #FFD166;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -40,8 +40,8 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #ffeb3b;
-    color: #0d47a1;
+    background-color: #FFD166;
+    color: #355C7D;
 }
 
 /* Conteúdo principal */
@@ -50,12 +50,12 @@ main {
 }
 
 main h1 {
-    color: #0d47a1;
+    color: #355C7D;
 }
 
 /* Rodapé */
 footer {
-    background-color: #eeeeee;
+    background-color: #F5F5F5;
     padding: 15px;
     margin-top: 30px;
     font-size: 0.9em;
@@ -63,7 +63,7 @@ footer {
     box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
 }
 
-/* Galeria de carros */
+/* Galeria de carros (com efeito Ghibli) */
 .carros {
     display: flex;
     justify-content: center;
@@ -75,14 +75,17 @@ footer {
 .carros img {
     width: 200px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
 }
 
 .carros img:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+    filter: brightness(1.1);
 }
+
+/* Filiais (cards estilo natureza) */
 .filiais {
     display: flex;
     justify-content: center;
@@ -92,15 +95,16 @@ footer {
 }
 
 .filial {
-    background-color: #EA0A0A;
+    background: linear-gradient(135deg, #F2D16B, #F6B8B8);
+    color: #333;
     border-radius: 12px;
     padding: 20px;
     width: 250px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .filial:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
 }
