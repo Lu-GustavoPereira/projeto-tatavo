@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locadora IFPR - Resultado do Formulário</title>
+    <title>AFUPG's - Dados do Formulário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,12 +12,11 @@
 
     <!-- Cabeçalho -->
     <header>
-        <h2>Locadora IFPR</h2>
+        <h2>AFUPG's - Ambientação de Fotos Urbanas</h2>
         <nav>
             <a href="index.html">Início</a>
-            <a href="carros.html">Carros</a>
-            <a href="filiais.html">Filiais</a>
-            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato e Parceiros</a>
         </nav>
     </header>
 
@@ -34,9 +33,13 @@
                     echo "<p><strong>Mensagem:</strong> " . nl2br(htmlspecialchars($_POST["mensagem"])) . "</p>";
                 }
 
-                // Exibe os outros campos que o aluno adicionar
+                if (!empty($_POST["observacoes"])) {
+                    echo "<p><strong>Observações:</strong> " . nl2br(htmlspecialchars($_POST["observacoes"])) . "</p>";
+                }
+
+                // Caso outros campos sejam adicionados no futuro
                 foreach ($_POST as $campo => $valor) {
-                    if (!in_array($campo, ["nome", "email", "mensagem"])) {
+                    if (!in_array($campo, ["nome", "email", "mensagem", "observacoes"])) {
                         echo "<p><strong>" . ucfirst($campo) . ":</strong> " . htmlspecialchars($valor) . "</p>";
                     }
                 }
@@ -49,7 +52,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Locadora IFPR - Todos os direitos reservados</p>
+        <p>&copy; 2025 AFUPG's IFPR - Todos os direitos reservados. <em>"Todos merecem ter voz"</em></p>
     </footer>
 
 </body>
