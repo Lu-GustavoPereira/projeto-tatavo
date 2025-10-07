@@ -16,7 +16,7 @@
         <nav>
             <a href="index.html">Início</a>
             <a href="carros.html">Carros</a>
-            <a href="filiais.html">Filiais</a>
+            <a href="filiais.html">Filmes Ghibli</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
