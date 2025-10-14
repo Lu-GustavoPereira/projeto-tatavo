@@ -147,3 +147,83 @@ footer {
 .contato-form button:hover {
     background: #1976d2;
 }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0 12px 24px;
+  background: #f0f4eb; /* cor de fundo suave */
+}
+
+.dados-planilha {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fffef6; /* tom papel */
+  box-shadow: 0 4px 12px rgba(50, 50, 50, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.dados-planilha th {
+  background: linear-gradient(90deg, #88b04b, #b2cc71); /* verdes naturais */
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dados-planilha td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 15px;
+}
+
+.dados-planilha tr:nth-child(even) {
+  background: #f7fbe8;
+}
+
+.dados-planilha tr:hover {
+  background: #e6f2da;
+  transition: background 0.3s ease;
+}
+
+.info-msg {
+  text-align: center;
+  padding: 12px;
+  color: #5d704d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Totoro flutuando */
+.totoro-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  z-index: 10;
+  pointer-events: none;
+  animation: totoroFloat 4s ease-in-out infinite;
+}
+
+.totoro-float img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes totoroFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
