@@ -336,6 +336,11 @@ footer {
   color: #e9eef5;
 }
 
+.tema-escuro body {
+  background-color: #111821;
+  color: #e9eef5;
+}
+
 .tema-escuro header {
   background-color: #0b1220;
 }
