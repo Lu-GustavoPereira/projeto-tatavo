@@ -297,4 +297,73 @@ footer {
 
 .conteudo-scroll::-webkit-scrollbar-thumb:hover {
   background: #9db690;
+}/* ---------- Botão Toggle (Tema Gible) ---------- */
+.tema-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 50px;
+  height: 26px;
+  background: #517a8a; /* azul Gible desligado */
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  transition: background 0.25s;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.tema-toggle .bolinha {
+  width: 20px;
+  height: 20px;
+  background: #ffd56b; /* amarelo do Gible */
+  border-radius: 50%;
+  transition: transform 0.25s;
+}
+
+/* ---------- Estado Ativo ---------- */
+.tema-toggle.ativo {
+  background: #2e4a57; /* azul mais escuro do Gible */
+}
+
+.tema-toggle.ativo .bolinha {
+  transform: translateX(24px);
+}
+
+/* ---------- TEMA ESCURO ---------- */
+.tema-escuro {
+  background-color: #0f1720;
+  color: #e9eef5;
+}
+
+.tema-escuro header {
+  background-color: #0b1220;
+}
+
+.tema-escuro footer {
+  background-color: #0b1220;
+  color: #e9eef5;
+}
+
+.tema-escuro .conteudo-scroll {
+  background: #111821;
+  border-color: #2a3645;
+}
+
+.tema-escuro .bloco-item {
+  border-color: #2a3645;
+}
+
+.tema-escuro .bloco-item h2 {
+  color: #8db0ff;
+}
+
+/* Toggle no modo escuro */
+.tema-escuro .tema-toggle {
+  background: #374151;
+}
+
+.tema-escuro .tema-toggle .bolinha {
+  transform: translateX(24px);
 }
