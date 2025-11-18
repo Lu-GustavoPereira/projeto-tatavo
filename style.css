@@ -147,13 +147,14 @@ footer {
 .contato-form button:hover {
     background: #1976d2;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
 .table-wrap {
   max-width: 100%;
   overflow-x: auto;
   padding: 0 12px 24px;
-  background: #f0f4eb; /* cor de fundo suave */
+  background: #f0f4eb;
 }
 
 .dados-planilha {
@@ -161,7 +162,7 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   border-collapse: collapse;
-  background: #fffef6; /* tom papel */
+  background: #fffef6;
   box-shadow: 0 4px 12px rgba(50, 50, 50, 0.1);
   border-radius: 12px;
   overflow: hidden;
@@ -169,7 +170,7 @@ footer {
 }
 
 .dados-planilha th {
-  background: linear-gradient(90deg, #88b04b, #b2cc71); /* verdes naturais */
+  background: linear-gradient(90deg, #88b04b, #b2cc71);
   color: #fff;
   text-align: left;
   padding: 12px;
@@ -219,22 +220,18 @@ footer {
 }
 
 @keyframes totoroFloat {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
-/* 🌿 Estilo inspirado no Studio Ghibli */
 
+/* 🌿 Estilo inspirado no Studio Ghibli */
 .conteudo-scroll {
   max-height: 500px;
   overflow-y: auto;
   padding: 16px;
   border: 1px solid #d8cfc4;
   border-radius: 10px;
-  background: #faf6ef; /* tom bege claro e quente */
+  background: #faf6ef;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   scroll-behavior: smooth;
 }
@@ -267,20 +264,20 @@ footer {
 }
 
 .bloco-item h2 {
-  color: #4a6c57; /* verde-musgo inspirado em "Totoro" */
+  color: #4a6c57;
   margin-bottom: 8px;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Georgia', serif;
   font-weight: 600;
 }
 
 .bloco-item p {
   margin: 6px 0;
   color: #5c5b4e;
-  font-family: 'Segoe UI', 'Nunito', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.5;
 }
 
-/* Estiliza a barra de rolagem com um toque suave */
+/* Scrollbar */
 .conteudo-scroll::-webkit-scrollbar {
   width: 10px;
 }
@@ -297,14 +294,16 @@ footer {
 
 .conteudo-scroll::-webkit-scrollbar-thumb:hover {
   background: #9db690;
-}/* ---------- Botão Toggle (Tema Gible) ---------- */
+}
+
+/* ---------- Botão Toggle (Tema Gible) ---------- */
 .tema-toggle {
   position: absolute;
   top: 15px;
   right: 20px;
   width: 50px;
   height: 26px;
-  background: #517a8a; /* azul Gible desligado */
+  background: #517a8a;
   border-radius: 20px;
   cursor: pointer;
   padding: 3px;
@@ -317,14 +316,14 @@ footer {
 .tema-toggle .bolinha {
   width: 20px;
   height: 20px;
-  background: #ffd56b; /* amarelo do Gible */
+  background: #ffd56b;
   border-radius: 50%;
   transition: transform 0.25s;
 }
 
 /* ---------- Estado Ativo ---------- */
 .tema-toggle.ativo {
-  background: #2e4a57; /* azul mais escuro do Gible */
+  background: #2e4a57;
 }
 
 .tema-toggle.ativo .bolinha {
@@ -359,11 +358,7 @@ footer {
   color: #8db0ff;
 }
 
-/* Toggle no modo escuro */
-.tema-escuro .tema-toggle {
-  background: #374151;
-}
-
-.tema-escuro .tema-toggle .bolinha {
+/* Toggle no modo escuro — CORRIGIDO */
+.tema-escuro .tema-toggle.ativo .bolinha {
   transform: translateX(24px);
 }
