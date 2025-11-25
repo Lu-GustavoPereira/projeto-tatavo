@@ -285,6 +285,14 @@ footer {
 }
 
 /* ---------- TOGGLE TEMA ---------- */
+
+/* Modo escuro deixa a plaquinha bem escura */
+.tema-escuro .tema-toggle {
+  background: #0a0f15;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* Toggle padrão */
 .tema-toggle {
   position: absolute;
   top: 15px;
